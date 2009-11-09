@@ -3,7 +3,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
-README_LOCAL
+TODO
 dist.ini
 lib/Catalyst/Role/Messages.pm
 t/01.t

@@ -1,5 +1,5 @@
 ---
-abstract: "Add \"status messages\" to your app, easy like!"
+abstract: "Easy way to stuff \"status\" messages into your stash"
 author:
   - 'Devin Austin <dhoss@cpan.org>'
 generated_by: 'Dist::Zilla version 1.093000'
@@ -12,4 +12,4 @@ requires:
   Catalyst: 5.8
   Moose: "\"\""
   Moose::Role: "\"\""
-version: 0.01
+version: 0.02

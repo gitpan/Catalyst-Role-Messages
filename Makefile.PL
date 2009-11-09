@@ -8,8 +8,8 @@ WriteMakefile(
   DISTNAME  => 'Catalyst-Role-Messages',
   NAME      => 'Catalyst::Role::Messages',
   AUTHOR    => "Devin\ Austin\ \<dhoss\@cpan\.org\>",
-  ABSTRACT  => "Add\ \"status\ messages\"\ to\ your\ app\,\ easy\ like\!",
-  VERSION   => '0.01',
+  ABSTRACT  => "Easy\ way\ to\ stuff\ \"status\"\ messages\ into\ your\ stash",
+  VERSION   => '0.02',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'perl') : ()),
   PREREQ_PM    => {
