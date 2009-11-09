@@ -1,0 +1,15 @@
+---
+abstract: "Add \"status messages\" to your app, easy like!"
+author:
+  - 'Devin Austin <dhoss@cpan.org>'
+generated_by: 'Dist::Zilla version 1.093000'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Catalyst-Role-Messages
+requires:
+  Catalyst: 5.8
+  Moose: "\"\""
+  Moose::Role: "\"\""
+version: 0.01

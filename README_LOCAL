@@ -1,0 +1,24 @@
+use Catalyst qw/
+    ...
+    Catalyst::Role::Messages
+/;
+
+# later...
+
+package MyApp::Controller::Blargh;
+...
+
+sub fnargh : Local {
+    my ($self, $c) = @_;
+    ## do some form submission stuff
+    if( $form_stuff_is_successful ) {
+        $c->msg("Successful submission is successful!");
+    }
+}
+
+Open up your wrapper and add these lines:
+[% FOR message IN messages -%]
+    [% message %]
+[% END -%]
+
+(Add formatting as you please)
