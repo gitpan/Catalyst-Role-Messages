@@ -12,4 +12,5 @@ requires:
   Catalyst: 5.8
   Moose: "\"\""
   Moose::Role: "\"\""
-version: 0.02
+  Test::Simple: 0.88
+version: 0.03.1

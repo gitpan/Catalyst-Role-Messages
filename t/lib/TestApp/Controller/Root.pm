@@ -1,5 +1,5 @@
 package TestApp::Controller::Root;
-our $VERSION = '0.02';
+our $VERSION = '0.03.1';
 
 
 use Moose;
@@ -38,6 +38,14 @@ sub has_message :Local {
 sub no_message :Local {
     my ( $self, $c ) = @_;
     $c->res->body("No messages");
+}
+
+sub many_messages : Local {
+	my ( $self, $c ) = @_;
+	$c->msg("One");
+	$c->msg("Two");
+	$c->msg("Three");
+	$c->res->body(join ", ", @{$c->stash->{messages}}); 
 }
 
 =head2 end

@@ -7,7 +7,7 @@ Catalyst::Role::Messages - Easy way to stuff "status" messages into your stash
 
 =head1 VERSION
 
-version 0.02
+version 0.03.1
 
 =cut
 
@@ -52,7 +52,8 @@ that allowed you to add an arbitrary number of messages to C<$c->stash> via an a
 =head1 METHODS
 
 msgs $message
-    Push a message into the array
+
+  Push a message into the array
 
 =cut
 
@@ -68,6 +69,12 @@ None, yet.
 Devin Austin, <dhoss@cpan.org>
 
 With thanks to Mischa Spiegelmock
+
+=cut
+
+=head1 TODO
+
+Allow user to specify names for message keys
 
 =cut
 
@@ -87,10 +94,11 @@ I dunno :-)
 
 # ABSTRACT: Add "status messages" to your app, easy like!
 
-our $VERSION = '0.01'; 
+our $VERSION = '0.03'; 
 sub msg {
     my ($c, $msg) = @_;
     $c->stash->{messages} ||= [];
+    # I'm wondering if this can't be done more purdier
     push @{$c->stash->{messages}}, $msg if $msg;
 }
 
